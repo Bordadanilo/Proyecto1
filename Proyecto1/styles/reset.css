@@ -1,0 +1,57 @@
+/* Reset básico para CSS */
+
+/* Elimina márgenes y padding predeterminados de todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegura que el tamaño de fuente y la altura de línea sean consistentes */
+html {
+    font-size: 100%; /* Tamaño de fuente base (ajustable según el diseño) */
+    line-height: 1.5; /* Altura de línea base */
+}
+
+/* Elimina el subrayado y color predeterminado de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+/* Elimina el estilo de lista predeterminado */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Elimina el espacio entre celdas en tablas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Estilo base para botones y campos de formulario */
+button,
+input,
+select,
+textarea {
+    border: none;
+    background: none;
+    font: inherit; /* Hereda la fuente del elemento padre */
+}
+
+/* Asegura que los textarea se puedan redimensionar verticalmente */
+textarea {
+    resize: vertical; /* Permite el redimensionamiento vertical de los textarea */
+}
+
+/* Estilo base para el cuerpo del documento */
+body {
+    line-height: 1.5; /* Altura de línea base */
+    font-family: Arial, sans-serif; /* Fuente base */
+    background-color: #fff; /* Color de fondo predeterminado */
+    color: #000; /* Color de texto predeterminado */
+}

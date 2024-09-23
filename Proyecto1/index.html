@@ -4,14 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Proyecto 1</title>
+    <title>Mi Pagina web</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    
-        <h1>Proyecto 1</h1>
-        
+    <header>
+        <h1>Bienvenidos a mi primera página web</h1>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatum modi libero quidem itaque, optio ab, ea eum minus ipsa quae vero velit 
+                aut magnam placeat fugit, dolor numquam amet soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Amet totam doloremque, ipsam quos accusamus itaque expedita mollitia aperiam optio incidunt ducimus veniam 
+                dolore pariatur numquam repudiandae obcaecati asperiores possimus accusantium! Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Temporibus dicta, sequi et voluptatem quisquam amet rerum
+                dolorem provident eveniet autem laboriosam a. Deleniti officiis facere expedita fugiat animi, minus doloribus.
+            </p>
+        </section>
+        <section id="mis-tecnologias">
+            <h2>Mis tecnologías favoritas</h2>
+            <div class="tec-card">
+                <img src="assets/img/icons8-html-logo-144.png" alt="HTML">
+                <p> HTML </p>
+            </div>
+            <div class="tec-card">
+                <img src="assets/img/icons8-css-logo-144.png" alt="CSS">
+                <p> CSS </p>
+            </div>
+            <div class="tec-card">
+                <img src="assets/img/icons8-javascript-144.png" alt="JavaScript">
+                <p> JavaScript </p>
+            </div>
+        </section>
+        <section>
+            <article class="formulario-actividades">
+                <h2>Mis actividades favoritas</h2>
+                <form>
+                    <label>Titulo</label>
+                    <input type="text" id="titulo" placeholder="Título de la actividad">
+
+                    <label>Descripción</label>
+                    <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+                    <label>URL</label>
+                    <input type="url" id="imagen" placeholder="URL de la Imagen">
+
+                    <button id="agregar-actividad" type="button">Agregar Actividad</button>
+                </form>
+            </article>
+        </section>
+        <section>
+            <h2> ACTIVIDADES </h2>
+            <div id="actividades-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022, Borda Danilo</p>
+    </footer>
+
+    <script src="scripts/controladores.js"></script>
+    <script src="scripts/modelos.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
